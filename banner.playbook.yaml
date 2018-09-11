@@ -13,4 +13,9 @@
         WARNING: Suck it.
         ====================================================================
       state: present
+  - name: configure MOTD
+    ios_banner:
+      banner: MOTD
+      text: 'Chuck Norris says hi.'
+      state: present
 ...
