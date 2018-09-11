@@ -15,7 +15,7 @@
       state: present
   - name: configure MOTD
     ios_banner:
-      banner: MOTD
+      banner: motd
       text: 'Chuck Norris says hi.'
       state: present
 ...
