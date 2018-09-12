@@ -10,13 +10,17 @@
       banner: login
       text: |
         ====================================================================
-        WARNING: Suck it.
-        ====================================================================
+        WARNING: This is the login banner.
+         ====================================================================
       state: present
   - name: configure MOTD
     ios_banner:
       banner: motd
-      text: 'Chuck Norris says hi.'
+      text: 'Chuck Norris says hi.  FYI this is the MOTD'
       state: present
-      # ASA change banner.
+    - name: configure connection banner
+      ios_banner:
+      banner: connection
+      text: 'Connection banner.'
+      state: present
 ...
