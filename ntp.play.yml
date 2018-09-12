@@ -18,5 +18,4 @@
       banner: motd
       text: 'Chuck Norris says hi.'
       state: present
-      # ASA change banner.
 ...
